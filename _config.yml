@@ -1,0 +1,95 @@
+
+title: DL Tips - A Deep Learning tip per day!
+email: bachirooov@gmail.com
+description: This is about one Deep Learning tip every day! TensorFlow resources, Keras, PyTorch, and more
+baseurl: "/dltips" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: bachiirc
+github_username:  dzlab
+
+markdown: kramdown
+
+permalink: /:categories/:title/
+
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+disqus: dltips
+
+google_analytics: UA-155197388-1
+
+defaults:
+  -
+    scope:
+      path: _posts/en
+      type: posts
+    values:
+      layout: default
+      lang: en
+      is_post: true
+  -
+    scope:
+      path: _posts/zh_CN
+      type: posts
+    values:
+      layout: default
+      lang: zh_CN
+      is_post: true
+
+frameworks:
+  - tensorflow
+  - keras
+  - pytorch
+  - more
+
+# languages var
+languages:
+  -
+    name: en
+    link: /
+  -
+    name: zh_CN
+    link: /zh_CN
+
+transl:
+  en:
+    btn_submit_your_tip:
+      txt: Submit your tip
+      link: https://github.com/dzlab/dltips/blob/master/CONTRIBUTING.md
+    dropdown_lang:
+      en:
+        txt: English
+        link: /
+      zh_CN:
+        txt: 中国大陆
+        link: /
+    txt_latest_tips: Latest Tips
+    txt_popular_tips: Popular Tips
+    txt_read_more: Read More
+    txt_email_suscriber: Get the latest in TensorFlow, once a week.
+    txt_email_suscriber_2: Become a friend.
+    txt_email_placeholder: E-mail address
+    txt_email_button: Send
+    menu_footer:
+      about:
+        txt: About
+        link: /dltips/
+      contact:
+        txt: Contact
+        link: /
+    txt_footer: DL Tips is a collection of useful daily Deep Learning tips that will allow you to improve your skills
+    categories:
+      tensorflow: TensorFlow
+      keras: Keras
+      pytorch: PyTorch
+      more: More
+    read_more: Read More
+    show_me_next_page: Load me more tips
+    show_me_prev_page: Show me previous page
