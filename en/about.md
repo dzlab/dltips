@@ -17,8 +17,6 @@ On a daily basis (or at most), a tip will be posted and tweeted.
 
 Stay tuned to learn about all the items that the future of this awesome field of Deep Learning will holds for us.
 
-At midday, no matter if it is a weekend or a holiday, a tip will be posted and tweeted.
-
 ### Get involded
 
 There are tons of ways to get involded and help enrich those content of this site.
