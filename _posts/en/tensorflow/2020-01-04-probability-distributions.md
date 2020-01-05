@@ -64,3 +64,5 @@ samples = tf.random.poisson([1000], lam=2)
 ```python
 samples = tf.keras.backend.random_binomial([1000], p=0.2)
 ```
+
+Notebook can be found here - [link](https://github.com/dzlab/deepprojects/blob/master/tensorflow/Probability_Distributions_using_TensorFlow.ipynb)
