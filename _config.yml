@@ -16,7 +16,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-sitemap
-#  - jekyll-spaceship
+  - jekyll-spaceship
 
 exclude:
   - Gemfile
