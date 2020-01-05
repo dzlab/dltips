@@ -11,11 +11,12 @@ markdown: kramdown
 
 permalink: /:categories/:title/
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-sitemap
+#  - jekyll-spaceship
 
 exclude:
   - Gemfile
