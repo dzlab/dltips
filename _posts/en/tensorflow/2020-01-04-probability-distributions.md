@@ -3,7 +3,7 @@ layout: post
 
 title: Probability Distributions using TensorFlow
 
-tip-number: 00
+tip-number: 01
 tip-username: dzlab
 tip-username-profile: https://github.com/dzlab
 tip-tldr: Which probability distributions should I know, How do I know which one to use and when to use them?

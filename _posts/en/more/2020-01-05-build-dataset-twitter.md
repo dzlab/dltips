@@ -3,7 +3,7 @@ layout: post
 
 title: Build a dataset from tweets
 
-tip-number: 00
+tip-number: 03
 tip-username: dzlab
 tip-username-profile: https://github.com/dzlab
 tip-tldr: Some new social movement have emerged on social media, how could get enough data to study/undestand what's happening?

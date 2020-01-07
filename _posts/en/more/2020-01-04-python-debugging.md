@@ -3,7 +3,7 @@ layout: post
 
 title: Debugging in Python
 
-tip-number: 00
+tip-number: 02
 tip-username: dzlab
 tip-username-profile: https://github.com/dzlab
 tip-tldr: My training loop just crashed and I have no idea what the error does mean, what should I do?
