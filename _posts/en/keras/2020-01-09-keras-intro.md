@@ -1,12 +1,12 @@
 ---
 layout: post
 
-title: Keras Introduction
+title: Introduction to Keras
 
 tip-number: 05
 tip-username: dzlab
 tip-username-profile: https://github.com/dzlab
-tip-tldr: Some new social movement have emerged on social media, how could get enough data to study/undestand what's happening?
+tip-tldr: Keras is a popular Deep Learning framework with a user friendly API.
 tip-writer-support: https://www.patreon.com/dzlab
 
 categories:
@@ -47,13 +47,6 @@ model.fit(features, labels, epochs=2, batch_size=10)
 predictions = model.predict(features)
 ```
 
-The Twitter API can be either directly queried to get a one time response
-
-```python
-api = tweepy.API(auth)
-Tweets = api.search('some search query', count = 10, lang='en', exclude='retweets', tweet_mode='extended')
-```
-
 ## Data
 Data for your neural network can be in different form, stored as python objects with `pickle` or in raw files (e.g. images, text). Keras accept data as numpy arrays, so sometimes you may need some preprocessing which Keras provides a lot helper to facilitate this step.
 
@@ -81,29 +74,6 @@ DATA_URL = "http://archive.ics.uci.edu/ml/machine-learning-databases/pima-indian
 
 data = np.loadtxt(urlopen(DATA_URL), delimiter=",")
 X, y = data[:, 0:8], data [:, 8]
-```
-
-### Preprocessing
-Preprocessing can be very tedious depending on the data format (e.g. json, xml, binary) and how your model is expecting it (e.g. a fixed sequence length). Keras provides an API for preprocessing different kind of raw data Image or Text that's very important to know about.
-
-#### Sequence Padding
-The `keras.preprocessing` package have a sequence processing helpers for sequence data preprocessing. Example you can use `pad_sequences` to add padding to your data so that the result would have same format.
-```python
-from keras.preprocessing.sequence import pad_sequences
-
-X_train = pad_sequences(X_train_raw, maxlen=80)
-X_test  = pad_sequences(X_test_raw, maxlen=80)
-```
-
-### One-Hot Encoding
-The `keras.utils` package have processing helpers for categorical embedding. Example you can use `to_categorical` to transform an integer represening a class into a sparse vector with zeros everywhere but the index of the class.
-```python
-from keras.utils import to_categorical
-
-num_classes = 10
-
-Y_train = to_categorical(y_train_raw, num_classes)
-Y_test = to_categorical(y_test_raw, num_classes)
 ```
 
 ## Architectures
@@ -152,7 +122,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 A multi-class classification model should have:
 * more than one output in the final layer,
 * use `softmax` activation function,
-* use `categorical_crossentropy` loss function.
+* use `categorical_crossentropy` or `sparse_categorical_crossentropy` loss functions.
 * use `accuracy` metric.
 
 ```python
@@ -215,7 +185,7 @@ Keras provide an extensive API for every step in the lifecyle of a model
 ### Training
 You can train and monitor your metric every epoch on the training and validation sets
 ```python
-model3.fit(X_train, y_train,
+model.fit(X_train, y_train,
   batch_size=32, epochs=10, verbose=1,
   validation_data=(X_test,y_test)
 )
@@ -261,7 +231,12 @@ model = load_model('model_file.h5')
 ```
 
 ### Callbacks
-You can use callbacks to control training, e.g. using `EarlyStopping` callback
+A callback is a function that will be invoked at given stages of the training procedure. They usually help to get an idea oof internal states and statistics of the model during training.
+
+* `EarlyStopping` Stop training when a monitored quantity has stopped improving
+* `LearningRateScheduler` a scheduler to control Learning rate and change it over time
+* `TensorBoard` will report metrics to TensorBoard for basic visualizations
+
 ```python
 from keras.callbacks import EarlyStopping
 
