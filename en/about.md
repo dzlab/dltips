@@ -31,11 +31,11 @@ You'are more than welcome to Send us a PRs [Click to see the instructions](https
 
 There are a lot of way to get update, choose your own
 
-- [Official Blog](http://dzlab.github.io/dltips)
-- [Official Twitter Account](https://twitter.com/bachiirc)
-- [Awesomelists](https://awesomelists.top/#/repos/dzlab/dltips)
+- [Blog](https://dzlab.github.io/dltips/)
+- [Github](https://github.com/dzlab/dltips/)
+- [Twitter](https://twitter.com/bachiirc)
 
 > Don't forget to Star the repo, as this will help to promote the project!
 
 ### Gratefulness
-TF Tips is based on the awesome [jstips](http://www.jstips.co) project by [Lovera Joel](https://github.com/loverajoel).
+DL Tips is based on the awesome [jstips](http://www.jstips.co) project by [Lovera Joel](https://github.com/loverajoel).
