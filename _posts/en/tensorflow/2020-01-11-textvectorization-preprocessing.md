@@ -6,7 +6,7 @@ title: How to use TextVectorization layer
 tip-number: 07
 tip-username: dzlab
 tip-username-profile: https://github.com/dzlab
-tip-tldr: Keras provides a set of very helpful images preprocessing utilities.
+tip-tldr: How to preprocess text in TensorFlow using TextVectorization.
 tip-writer-support: https://www.patreon.com/dzlab
 
 categories:
