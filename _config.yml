@@ -23,6 +23,7 @@ exclude:
   - Gemfile.lock
 
 disqus: dltips
+utterances: dzlab/dltips
 
 google_analytics: UA-155197388-1
 
