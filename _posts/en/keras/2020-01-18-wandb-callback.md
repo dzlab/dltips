@@ -46,13 +46,18 @@ Create Keras callback to log training information
 wandb_callback = wandb.keras.WandbCallback(log_weights=True)
 ```
 
-Add the callback to Keras fit() call
+Add the callback to Keras `fit()` call
 ```python
 model.fit(train_ds,
   validation_data=valid_ds,
   epochs=10,
   callbacks=[wandb_callback]
 )
+```
+
+After training finishes, you can save the model to W&B
+```python
+model.save(os.path.join(wandb.run.dir, "<model-name>.h5"))
 ```
 
 Learn more about what you can do with W&B - [link](https://docs.wandb.com/integrations/jupyter.html).
