@@ -3,7 +3,7 @@ layout: post
 
 title: Weights & Biases callback for Keras
 
-tip-number: 12
+tip-number: 13
 tip-username: dzlab
 tip-username-profile: https://github.com/dzlab
 tip-tldr: How to keep track of what hyper-parameters were used in what experiment?
