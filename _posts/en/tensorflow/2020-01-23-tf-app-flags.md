@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Use to expose and parse CLI arguments
+title: Expose and parse CLI arguments
 
 tip-number: 16
 tip-username: dzlab
