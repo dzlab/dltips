@@ -76,6 +76,15 @@ data = np.loadtxt(urlopen(DATA_URL), delimiter=",")
 X, y = data[:, 0:8], data [:, 8]
 ```
 
+Keras has a utility `get_file` method to download and extract data
+```python
+DATA_URL = "http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz"
+keras.utils.get_file(
+  fname   = "aclImdb.tar.gz",
+  origin  = DATA_URL,
+  extract = True
+)
+```
 ## Architectures
 
 ### Multilayer Perceptron (MLP)
