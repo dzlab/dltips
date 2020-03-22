@@ -10,13 +10,14 @@ On a daily basis (or at most), a tip will be posted and tweeted.
 Stay tuned to learn about all the items that the future of this awesome field of Deep Learning will holds for us.
 
 ### Get involded
-
 There are tons of ways to get involded and help enrich those content of this site.
 * You have a tip? or an existent tip is missing for your favorite framework?
 * You know a language? Help translating an existing tip to your native language.
 * You see room for improvements? or you have suggestions?
 
 You'are more than welcome to Send us a PRs [Click to see the instructions](https://github.com/dzlab/dltips/blob/master/CONTRIBUTING.md)
+
+[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/0)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/0)[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/1)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/1)[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/2)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/2)[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/3)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/3)[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/4)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/4)[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/5)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/5)[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/6)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/6)[![](https://sourcerer.io/fame/dzlab/dzlab/dltips/images/7)](https://sourcerer.io/fame/dzlab/dzlab/dltips/links/7)
 
 
 ### Keep in touch
