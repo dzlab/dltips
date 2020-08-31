@@ -26,6 +26,7 @@ setInterval(keepAwake,5000)
 ```
 
 **Useful magic commands**
+
 | Command | Description |
 |---------|-------------|
 | `%%clear` | Clear cell output |
