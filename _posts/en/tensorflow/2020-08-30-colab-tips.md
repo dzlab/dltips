@@ -15,14 +15,14 @@ categories:
 ---
 
 **Prevent Colab from disconnecting**
+
 On Chrome, open console via `More tools` -> `Developer Tools`
 ```javascript
 function keepAwake(){
-
-console.log("Awake");
-document.querySelector("#comments > span").click()
+  console.log("Awake");
+  document.querySelector("#comments > span").click();
 }
-setInterval(keepAwake,5000)
+setInterval(keepAwake, 5000);
 ```
 
 **Useful magic commands**
