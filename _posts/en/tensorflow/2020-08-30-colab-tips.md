@@ -29,4 +29,6 @@ setInterval(keepAwake, 5000);
 
 | Command | Description |
 |---------|-------------|
+| `%%bash` | Make the accept shell commands instead of python code |
 | `%%clear` | Clear cell output |
+| `%debug` | Debug last execution that failed with an Exception |
