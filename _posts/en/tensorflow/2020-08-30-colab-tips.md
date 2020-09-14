@@ -32,4 +32,5 @@ setInterval(keepAwake, 5000);
 | `%%bash` | Make the accept shell commands instead of python code |
 | `%%clear` | Clear cell output |
 | `%debug` | Debug last execution that failed with an Exception |
-| `%%writefile filename` | Write the cell content of into file (e.g. `%%writefile main.py`).|
+| `%%writefile [-a] filename` | Write the cell content of into file (e.g. `%%writefile main.py`). If `-a`/`--append` is provided then the content of the cell will be appended to the file.|
+| `%%file filename` | alias for `%%writefile`.|
