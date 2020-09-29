@@ -48,8 +48,8 @@ print(type(Color.BLUE))
 ```
 
 More information about enumerations:
-* https://docs.python.org/3.4/library/enum.html
-* https://pythonspot.com/python-enum/
+* [https://docs.python.org/3.4/library/enum.html](https://docs.python.org/3.4/library/enum.html)
+* [https://pythonspot.com/python-enum/](https://pythonspot.com/python-enum/)
 
 ## 2. Data classes - Python 3.7+
 
@@ -99,8 +99,8 @@ print(rect2.area())
 ```
 
 More information about data classes:
-* https://realpython.com/python-data-classes/
-* https://docs.python.org/3/library/dataclasses.html
+* [https://realpython.com/python-data-classes/](https://realpython.com/python-data-classes/)
+* [https://docs.python.org/3/library/dataclasses.html](https://docs.python.org/3/library/dataclasses.html)
 
 ## 3. Pathlib - Python 3.4+
 
@@ -127,8 +127,8 @@ print(path.resolve())
 
 More information about the pathlib module:
 
-* https://realpython.com/python-pathlib/
-* https://docs.python.org/3/library/pathlib.html
+* [https://realpython.com/python-pathlib/](https://realpython.com/python-pathlib/)
+* [https://docs.python.org/3/library/pathlib.html](https://docs.python.org/3/library/pathlib.html)
 
 ## 4. Type hints - Python 3.5+
 
@@ -147,8 +147,8 @@ class Rectangle1:
 ```
 
 More information about type hints:
-* http://veekaybee.github.io/2019/07/08/python-type-hints/
-* https://docs.python.org/3/library/typing.html
+* [http://veekaybee.github.io/2019/07/08/python-type-hints/](http://veekaybee.github.io/2019/07/08/python-type-hints/)
+* [https://docs.python.org/3/library/typing.html](https://docs.python.org/3/library/typing.html)
 
 ## 5. f-strings - Python 3.6+
 
@@ -170,8 +170,8 @@ print(f"x = {x} and y = {y}.")
 
 More information about f-strings:
 
-* https://realpython.com/python-f-strings/
-* https://python.org/dev/peps/pep-0498/
+* [https://realpython.com/python-f-strings/](https://realpython.com/python-f-strings/)
+* [https://python.org/dev/peps/pep-0498/](https://python.org/dev/peps/pep-0498/)
 
 ## 6. Extended Iterable Unpacking - Python 3.0+
 
@@ -189,8 +189,8 @@ print(head, body, tail)
 ```
 
 More information about Extended Iterable Unpacking:
-* https://python.org/dev/peps/pep-3132/
-* https://rfk.id.au/blog/entry/extended-iterable-unpacking/
+* [https://python.org/dev/peps/pep-3132/](https://python.org/dev/peps/pep-3132/)
+* [https://rfk.id.au/blog/entry/extended-iterable-unpacking/](https://rfk.id.au/blog/entry/extended-iterable-unpacking/)
 
 ## 7. Walrus operator - Python 3.8+
 
@@ -211,10 +211,10 @@ while value != "0":
 while (value := input("Enter a value: ")) != 0:
   print(f"Value {value}")
 ```
-More information about the Walrus operator:
 
-* https://deepsource.io/blog/python-walrus-operator/
-* https://python.org/dev/peps/pep-0572/
+More information about the Walrus operator:
+* [https://deepsource.io/blog/python-walrus-operator/](https://deepsource.io/blog/python-walrus-operator/)
+* [https://python.org/dev/peps/pep-0572/](https://python.org/dev/peps/pep-0572/)
 
 ## 8. Async IO - Python 3.4+
 
@@ -241,8 +241,8 @@ asyncio.run(hello())
 ```
 
 More information about the asyncio module:
-* https://realpython.com/async-io-python/
-* https://docs.python.org/3/library/asyncio.html
+* [https://realpython.com/async-io-python/](https://realpython.com/async-io-python/)
+* [https://docs.python.org/3/library/asyncio.html](https://docs.python.org/3/library/asyncio.html)
 
 ## 9. Underscores in Numeric Literals - Python 3.6+
 
@@ -258,12 +258,12 @@ print(x, y, x == y)
 ```
 
 More information about underscores in numeric literals:
-* https://python.org/dev/peps/pep-0515/
+* [https://python.org/dev/peps/pep-0515/](https://python.org/dev/peps/pep-0515/)
 
 
 ## 10. LRU Cache - Python 3.2+
 
-Using the functools.lru_cache decorator, you can wrap any function with a memoizing callable that implements a Least Recently Used (LRU) algorithm to evict the least recently used entries.
+Using the `functools.lru_cache` decorator, you can wrap any function with a memoizing callable that implements a Least Recently Used (LRU) algorithm to evict the least recently used entries.
 
 Do you want fast code? Look into this.
 
@@ -282,9 +282,9 @@ print(fib(50))
 # 12586269025
 ```
 
-More information about the lru_cache decorator:
-* https://docs.python.org/3/library/functools.html#functools.lru_cache
-* https://cameronmacleod.com/blog/python-lru-cache
+More information about the `lru_cache` decorator:
+* [https://docs.python.org/3/library/functools.html#functools.lru_cache](https://docs.python.org/3/library/functools.html#functools.lru_cache)
+* [https://cameronmacleod.com/blog/python-lru-cache](https://cameronmacleod.com/blog/python-lru-cache)
 
 ## Credits
 https://twitter.com/svpino/status/1308632206278111232
