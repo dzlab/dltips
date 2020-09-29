@@ -130,5 +130,161 @@ More information about the pathlib module:
 * https://realpython.com/python-pathlib/
 * https://docs.python.org/3/library/pathlib.html
 
+## 4. Type hints - Python 3.5+
+
+You can use type hints to indicate the type of a value in your code. For example, you can use it to annotate the arguments of a function and its return type.
+
+These hints make your code more readable, and help tools understand it better.
+
+```python
+class Rectangle1:
+  def __init__(self, width: float, height: float) -> None:
+    self.width = width
+    self.height = height
+
+  def area(self) -> float:
+    return self.width * self.height
+```
+
+More information about type hints:
+* http://veekaybee.github.io/2019/07/08/python-type-hints/
+* https://docs.python.org/3/library/typing.html
+
+## 5. f-strings - Python 3.6+
+
+Instead of having to use the `.format()` method to print your strings, you can use f-strings for a much more convenient way to replace values in your strings.
+
+f-strings are much more readable, concise, and easier to maintain.
+```python
+x = 2
+y = 3
+
+# Compare this statement:
+print("x = {} and y = {}.".format(x, y))
+# x = 2 and y = 3.
+
+# with the f-string version
+print(f"x = {x} and y = {y}.")
+# x = 2 and y = 3.
+```
+
+More information about f-strings:
+
+* https://realpython.com/python-f-strings/
+* https://python.org/dev/peps/pep-0498/
+
+## 6. Extended Iterable Unpacking - Python 3.0+
+
+Using this trick, while unpacking an iterable, you can specify a "catch-all" variable that will be assigned a list of the items not assigned to a regular variable.
+
+Simple, but very convenient to keep the code concise.
+
+Down pointing backhand index
+```python
+items = [1, 2, 3, 4, 5]
+head, *body, tail = items
+
+print(head, body, tail)
+# 1 [2, 3, 4] 5
+```
+
+More information about Extended Iterable Unpacking:
+* https://python.org/dev/peps/pep-3132/
+* https://rfk.id.au/blog/entry/extended-iterable-unpacking/
+
+## 7. Walrus operator - Python 3.8+
+
+Using assignment expressions (through the walrus operator :=) you can assign and return a value in the same expression.
+
+This operator makes certain constructs more convenient and helps communicate the intent of your code more clearly.
+
+```python
+# This is a regular while loop.
+# Notice how we need to ask for a value twice.
+value = input("Enter a value: ")
+while value != "0":
+  value = input("Enter a value: ")
+  print(f"Value {value}")
+
+# This is the same while loop, but now we are using
+#  the walrus operator to avoid having to ask for the value twice.
+while (value := input("Enter a value: ")) != 0:
+  print(f"Value {value}")
+```
+More information about the Walrus operator:
+
+* https://deepsource.io/blog/python-walrus-operator/
+* https://python.org/dev/peps/pep-0572/
+
+## 8. Async IO - Python 3.4+
+
+The asyncio module is the new way to write concurrent code using the `async` and `await` syntax.
+
+This approach allows for much more readable code and abstracts away many of the complexity inherent with concurrent programming.
+
+```python
+import asyncio
+
+async def say():
+  print("Hello")
+  await asyncio.sleep(1)
+  print("World")
+
+async def hello():
+  await asyncio.gather(say(), say())
+
+asyncio.run(hello())
+# Hello
+# Hello
+# World
+# World
+```
+
+More information about the asyncio module:
+* https://realpython.com/async-io-python/
+* https://docs.python.org/3/library/asyncio.html
+
+## 9. Underscores in Numeric Literals - Python 3.6+
+
+This one is a small, nice addition: you can use underscores in numeric literals for improved readability.
+
+This will shave off a few seconds every time you had to count how many digits a number had.
+```python
+x = 1_000_000
+y = 1000000
+
+print(x, y, x == y)
+# 1000000 1000000 True
+```
+
+More information about underscores in numeric literals:
+* https://python.org/dev/peps/pep-0515/
+
+
+## 10. LRU Cache - Python 3.2+
+
+Using the functools.lru_cache decorator, you can wrap any function with a memoizing callable that implements a Least Recently Used (LRU) algorithm to evict the least recently used entries.
+
+Do you want fast code? Look into this.
+
+```python
+from functools import lru_cache
+
+@lru_cache(maxsize=128)
+def fib(number: int) -> int:
+  if number == 0:
+    return 0
+  if number == 1:
+    return 1
+  return fib(number-1) + fib(number-2)
+
+print(fib(50))
+# 12586269025
+```
+
+More information about the lru_cache decorator:
+* https://docs.python.org/3/library/functools.html#functools.lru_cache
+* https://cameronmacleod.com/blog/python-lru-cache
+
 ## Credits
 https://twitter.com/svpino/status/1308632206278111232
