@@ -44,6 +44,11 @@ First, Install `optuna` as follows
 $ pip install optuna
 ```
 
+Import the `Optuna` package
+```python
+import optuna
+```
+
 ## Helper functions
 
 Second, create helper functions
