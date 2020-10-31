@@ -25,6 +25,14 @@ function keepAwake(){
 setInterval(keepAwake, 5000);
 ```
 
+**Hide code cell**
+
+Simply add a title to the Code cell (e.g. `#@title cell title`) or
+
+1. Right-click on the area on the left of the cell (below the "Play" button) and choose "Add a form"
+2. Enter a title for the cell like `#@title cell title`
+3. Right-click again in the same place and choose "Form > Hide code"
+
 **Useful magic commands**
 
 | Command | Description |
