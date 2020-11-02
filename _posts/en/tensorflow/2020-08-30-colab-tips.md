@@ -33,6 +33,20 @@ Simply add a title to the Code cell (e.g. `#@title cell title`) or
 2. Enter a title for the cell like `#@title cell title`
 3. Right-click again in the same place and choose "Form > Hide code"
 
+**Collapsible markdown**
+
+<details><summary>CLICK</summary>
+<p>
+
+#### hidden code block in a text cell!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
 **Useful magic commands**
 
 | Command | Description |
