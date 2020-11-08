@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Nerual Architecture Search in Tensorflow with Optuna
+title: Neural Architecture Search in Tensorflow with Optuna
 
 tip-number: 32
 tip-username: dzlab
