@@ -19,6 +19,7 @@ Docker is good for packaging binaries for production use as well as for developp
 We can leaverage [Docker multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) to create a clean final Docker image for the runtime phase.
 
 1. have a builder image to compile and install all dependencies
+
 ```Dockerfile
 FROM continuumio/miniconda3:latest as builder
 
@@ -34,6 +35,7 @@ RUN . /root/.bashrc && \
 ```
 
 You can declare the dependencies in a `requirements.txt` file, something like this
+
 ```yaml
 pandas
 numpy
@@ -42,6 +44,7 @@ prophet
 ```
 
 2. have the final image that copies the binaries and propoerly configure the `PATH` to have access to them
+
 ```Dockerfile
 FROM busybox
 
@@ -53,6 +56,7 @@ RUN echo 'alias python=/opt/conda/envs/py38/bin/python' >> ~/.bashrc && . /root/
 Note that the target runtime image can be anything, a lightweight image like `busybox`, a python image or even a java (e.g `openjdk:11`).
 
 3. The final `Dockerfile` will combine the two build steps and would look like this
+
 ```Dockerfile
 # Stage 1: Builder
 FROM continuumio/miniconda3:latest as builder
