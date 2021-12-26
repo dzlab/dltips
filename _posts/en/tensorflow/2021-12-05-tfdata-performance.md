@@ -41,3 +41,5 @@ dataset.batch(3).prefetch(2) # prefetches two batches of 3 elements
 ```
 
 > Note using this comes at the cost of using additional memory to store prefetched elements.
+
+More data performance tips [here](https://www.tensorflow.org/guide/data_performance)
