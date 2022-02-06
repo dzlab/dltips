@@ -81,3 +81,5 @@ mels, alignment_history, audios = text2speech(story, tacotron2, melgan)
 
 ipd.Audio(audios, rate=22050)
 ```
+
+Here are more inference examples with each model at [notebooks](https://github.com/tensorspeech/TensorFlowTTS/tree/master/notebooks). For language specific examples, see [colab](https://colab.research.google.com/drive/1akxtrLZHKuMiQup00tzO2olCaN-y3KiD?usp=sharing) (for English), [colab](https://colab.research.google.com/drive/1ybWwOS5tipgPFttNulp77P6DAB5MtiuN?usp=sharing) (for Korean), [colab](https://colab.research.google.com/drive/1YpSHRBRPBI7cnTkQn1UcVTWEQVbsUm1S?usp=sharing) (for Chinese), [colab](https://colab.research.google.com/drive/1jd3u46g-fGQw0rre8fIwWM9heJvrV1c0?usp=sharing) (for French), [colab](https://colab.research.google.com/drive/1W0nSFpsz32M0OcIkY9uMOiGrLTPKVhTy?usp=sharing) (for German).
