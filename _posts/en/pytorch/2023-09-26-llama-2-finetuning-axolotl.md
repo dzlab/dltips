@@ -15,12 +15,12 @@ categories:
 ---
 
 ```
-                                                   dP            dP   dP 
-                                                   88            88   88 
-                        .d8888b. dP.  .dP .d8888b. 88 .d8888b. d8888P 88 
-                        88'  `88  `8bd8'  88'  `88 88 88'  `88   88   88 
-                        88.  .88  .d88b.  88.  .88 88 88.  .88   88   88 
-                        `88888P8 dP'  `dP `88888P' dP `88888P'   dP   dP 
+                                dP            dP   dP 
+                                88            88   88 
+    .d8888b. dP.  .dP .d8888b. 88 .d8888b. d8888P 88 
+    88'  `88  `8bd8'  88'  `88 88 88'  `88   88   88 
+    88.  .88  .d88b.  88.  .88 88 88.  .88   88   88 
+    `88888P8 dP'  `dP `88888P' dP `88888P'   dP   dP 
 ```
 
 [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl) is a library that makes fine-tuning LLMs an easy task by using a configuration-first approach. With a single YAML file we can customize the training by defining parameters for: 
