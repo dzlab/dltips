@@ -21,6 +21,10 @@ We can use this API in a custom TF Callback to track GPU memory usage at `peak` 
 ```python
 class GPUMemoryCallback(tf.keras.callbacks.Callback):
     def __init__(self, target_batches, print_stats=False, **kwargs):
+        """
+        target_batches: A list of batch indices at which to record memory usage.
+        print_stats: A boolean flag indicating whether to print memory usage statistics.
+        """
         super().__init__(**kwargs)
         self.target_batches = target_batches
         self.print_stats = print_stats
@@ -47,6 +51,9 @@ class GPUMemoryCallback(tf.keras.callbacks.Callback):
         self._compute_memory_usage()
         self.labels.append(f"epoch {epoch} end")
 ```
+
+
+This callback uses the TensorFlow function `tf.config.experimental.get_memory_info("GPU:0")` to retrieve memory usage statistics for the GPU. It will record memory usage at the start of each epoch and at each batch index specified in `target_batches`. The recorded memory usage values, as well as the corresponding labels, are stored in the state of the callback.
 
 > Note: For simplicity we are assing there is a single GPU, `GPU:0`.
 
