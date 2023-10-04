@@ -134,12 +134,6 @@ In our case we will use LoRA which allows the user to fine-tune their model usin
 
 At inference time, the LoRA adapter needs to be reunited and combined with its original LLM to serve the inference request. The benefit, however, is that many LoRA adapters can re-use the original LLM which reduces overall memory requirements when serving multiple tasks and use cases.
 
-Now, let's perform **Parameter Efficient Fine-Tuning (PEFT)** fine-tuning as opposed to "full fine-tuning" as you did above. 
-
-
-<a name='3.1'></a>
-### 3.1 - Setup the PEFT/LoRA model for Fine-Tuning
-
 First, we need to set up the PEFT/LoRA model for fine-tuning with a new layer/parameter adapter
 
 ```python
@@ -218,5 +212,5 @@ peft_model = PeftModel.from_pretrained(
 
 ## Evaluation
 
-For evaluating the resulting models from the fine-tuning techniques discusser earlier, you can refer to a previous tip on evaluating LLMs Qualitatively (human evaluation) and Quantitatively (with ROUGE metrics) - [link]({{ "/en/pytorch/llm-evaluation/" }}).
+For evaluating the resulting models from the fine-tuning techniques discusser earlier, you can refer to a previous tip on evaluating LLMs Qualitatively (human evaluation) and Quantitatively (with ROUGE metrics) - [link]({{ "/en/pytorch/llm-evaluation/" | absolute_url }}).
 
