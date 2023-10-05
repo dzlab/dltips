@@ -100,7 +100,7 @@ tokenized_datasets = tokenized_datasets.filter(lambda example, index: index % 10
 We will use Hugging Face [Trainer](https://huggingface.co/docs/transformers/main_classes/trainer)) for full-tuning as follows:
 
 ```python
-output_dir = f'./dialogue-summary-training-{str(int(time.time()))}'
+output_dir = f'./fulltuned-DialogSum-training'
 
 training_args = TrainingArguments(
     output_dir=output_dir,
