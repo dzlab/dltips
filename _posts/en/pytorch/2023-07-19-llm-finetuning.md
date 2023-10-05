@@ -14,10 +14,10 @@ categories:
     - pytorch
 ---
 
-
-
 In this tip, we will fine-tune an LLM with two techniques; full fine-tuning and with Parameter Efficient Fine-Tuning (PEFT). We will use the [FLAN-T5](https://huggingface.co/docs/transformers/model_doc/flan-t5) LLM, which is a high quality instruction tuned model. 
 
+
+![Different LLM tuning techniques](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2023/09/11/Optimize_generative_AI_workloads_for_Sustainabilit_11092023_1-1.png)_Source [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/optimize-generative-ai-workloads-for-environmental-sustainability/)_
 
 First, install the required packages for the LLM, datasets and PEFT.
 ```shell
