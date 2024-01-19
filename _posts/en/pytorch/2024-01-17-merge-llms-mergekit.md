@@ -54,10 +54,12 @@ pip install -e git+https://github.com/cg123/mergekit
 Then, define the merge configuration file as illustrated above and then run `mergekit-yaml` command, for instance:
 
 ```shell
-mergekit-yaml path/to/config.yml path/to/output-model-directory --allow-crimes --out-shard-size 1B
+mergekit-yaml path/to/config.yml path/to/output-model-directory \
+  --allow-crimes \
+  --out-shard-size 1B
 ```
 
-> Note: using a shard size of 1B may split the merged model into many chunks, which can be helpful for uploading files. You can also make the shard size even smaller, e.g. 500M or even 250M.
+> Note: with the `--out-shard-size` option, we are specifying a shard size of 1B which may split the merged model into many chunks. But, we can also make the shard size even smaller, e.g. 500M or even 250M, which can be helpful when uploading the model chunks.
 
 
 Optionally, upload the model to Hugging Face
@@ -78,7 +80,7 @@ huggingface-cli login
 4. Upload the model weights to Hugging Face Hub
 
 ```python
-REPO_ID = 'username/model' # @param {type:"string"}
+REPO_ID = 'username/model'
 from huggingface_hub import HfApi
 api = HfApi()
 api.upload_folder(
